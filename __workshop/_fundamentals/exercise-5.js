@@ -86,7 +86,14 @@ const staffMembers = [
 ];
 
 const getData = (arr, key, val) => {
-  // return something
+  let newarr=[];
+  arr.forEach(element => {
+    const {skillLevels}=element;
+    if(skillLevels[key]>val || element[key]===val){
+      newarr.push(element);      
+    }
+  });
+return newarr;
 };
 
 // 2. Do a console.log to verify your function.
