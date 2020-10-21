@@ -5,10 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="style.css" rel="stylesheet" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link
+    href="https://fonts.googleapis.com/css?family=Jost:400,700&display=swap"
+    rel="stylesheet"/>
 
     <title>Signup Form</title>
   </head>
   <body>
+    <div class="wrapper">
+      <h1>Signup Form</h1>
+      <form name="signupForm" >
+        <div>
+          <label for="fname">Full name</label>
+          <input id="fname" name="fname" type="text"/>
+        </div>
+        <div>
+          <label for="street">Street address </label>
+          <input id="street" name="street" type="text"/>
+        </div>
+        <div>
+          <label for="email">Email address</label>
+          <input id="email" name="email" type="email"/>
+        </div>
+        <div>
+          <label for="phoneNumber">Phone number</label>
+          <input id="phoneNumber" name="phoneNumber" type="tel"/>
+        </div>
+        <div>
+          <label for="password">Password</label>
+          <input id="password" name="password" type="password" />
+        </div>
+        <div>
+          <label for="confirmPassword">Confirm Password</label>
+          <input id="confirmPassword" name="confirmPassword" type="password"/>
+        </div>
+        <div class="agreeTerms">
+          <input id="checkbox" type="checkbox">
+          <label>I agree to the <a href="#">terms of service</a></label>
+        </div>
+        <div id="error" class="error"></div>
+        <footer>
+          <button type="reset">Clear</button>
+          <button id="submitButton" type="submit" >Submit</button>
+        </footer>
+      </form>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
